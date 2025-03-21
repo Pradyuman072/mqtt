@@ -10,7 +10,7 @@ const RealTimeTable = () => {
     let ws
 
     try {
-      ws = new WebSocket("wss://localhost:8080") // Connect to WebSocket server
+      ws = new WebSocket("ws://localhost:8080") // Connect to WebSocket server
 
       ws.onopen = () => {
         setConnectionStatus("Connected")
